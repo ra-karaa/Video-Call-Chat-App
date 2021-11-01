@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ra.enterwind.lapaskumala">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+
+
+    <application
+        android:name=".OpenDuoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.MainActivity"/>
+        <activity android:name=".activities.auth.LoginActivity"/>
+        <activity android:name=".activities.auth.RegisterActivity"/>
+        <activity android:name=".activities.auth.RegisterFotoActivity"/>
+
+        <activity android:name=".activities.HomeActivity"/>
+        <activity android:name=".activities.moduleberita.BeritaActivity"/>
+        <activity android:name=".activities.moduleberita.DetailBeritaActivity"/>
+
+        <activity android:name=".activities.modulegaleri.GaleriActivity"/>
+        <activity android:name=".activities.modulchat.ChatActivity"/>
+        <activity android:name=".activities.modulchat.ChooseUser"/>
+
+        <activity android:name=".activities.modulcall.OutGoingActivity"/>
+        <activity android:name=".activities.CallActivity"/>
+        <activity android:name=".activities.VideoActivity"/>
+
+        <service android:name=".ui.OpenDuoConnectionService"
+            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".ui.OpenDuoCallReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
+    </application>
+
+</manifest>

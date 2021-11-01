@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lapas Kumala</string>
+    <string name="agora_app_id" translatable="false">72fa2f6d29334825b34535e9ee807d8d</string>
+    <string name="agora_access_token" translatable="false">00642eb1787467c4d11bff3071a738051cfIADvOhQpXmWcx4WQ9eJT1cXj2a58JXWnKtJ0hMY+Ws8G7xGUeuUAAAAAEABga1DeX1khXwEAAQBjWSFf</string>
+</resources>

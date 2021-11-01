@@ -1,0 +1,102 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.8, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "ra.enterwind.lapaskumala"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                onesignal_app_id: 'e0ba2245-fa0e-4cd6-8e0e-69d059c504db',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+    implementation 'com.facebook.shimmer:shimmer:0.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.wonderkiln:camerakit:0.13.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.github.bluejamesbond:textjustify-android:2.1.6'
+    implementation 'com.karumi:dexter:4.2.0'
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    implementation 'com.karumi:dexter:4.2.0'
+    implementation 'com.github.javiersantos:MaterialStyledDialogs:2.1'
+    implementation 'com.synnapps:carouselview:0.1.5'
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    implementation 'com.merhold.extensiblepageindicator:extensiblepageindicator:1.0.1'
+    implementation 'com.zolad:zoominimageview:1.0.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+//    sclaedrone run
+    implementation 'com.scaledrone:scaledrone-java:0.7.0'
+
+
+    implementation 'com.google.firebase:firebase-messaging:11.4.2'
+    implementation 'com.google.firebase:firebase-database:11.4.2'
+    implementation 'com.google.firebase:firebase-core:11.4.2'
+    implementation 'com.google.firebase:firebase-storage:11.4.2'
+    implementation 'com.firebase:firebase-client-android:2.5.2'
+    implementation 'me.himanshusoni.chatmessageview:chat-message-view:1.0.7'
+
+    implementation 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
+
+    implementation 'io.agora.rtc:full-sdk:3.0.1'
+    implementation 'io.agora.rtm:rtm-sdk:1.2.2'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'

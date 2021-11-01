@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kukar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/bg_splash"
+        android:gravity="center_vertical"
+        android:foregroundGravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="300dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Lapas Kumala Tenggarong"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:textColor="@color/black"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

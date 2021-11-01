@@ -1,0 +1,233 @@
+{
+  "project_info": {
+    "project_number": "1073239832895",
+    "firebase_url": "https://belajarcrud-e3fba.firebaseio.com",
+    "project_id": "belajarcrud-e3fba",
+    "storage_bucket": "belajarcrud-e3fba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073239832895:android:3f013107387302b7",
+        "android_client_info": {
+          "package_name": "com.example.dayana.belajarcrud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073239832895-ol510s7achmac16tctrane36fctqvd9r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dayana.belajarcrud",
+            "certificate_hash": "13240503acc564246ec07e7b1146d28dd005325f"
+          }
+        },
+        {
+          "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuZ0l4uYM4_dzxp87VrAGBGEtjKNJs_eY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073239832895:android:2afc899d82c631a9c17b8a",
+        "android_client_info": {
+          "package_name": "enterwind.ra.aduan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073239832895-n1l2gkhti575trsn97es4gar00u52c06.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "enterwind.ra.aduan",
+            "certificate_hash": "7241ebca5b81d81d27e2358c50eb47300b3f175d"
+          }
+        },
+        {
+          "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuZ0l4uYM4_dzxp87VrAGBGEtjKNJs_eY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073239832895:android:b734befa1382360fc17b8a",
+        "android_client_info": {
+          "package_name": "enterwind.ra.antrian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073239832895-4ecsdrhjvo3imp7fknm3lg25v0d9vhtj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "enterwind.ra.antrian",
+            "certificate_hash": "7241ebca5b81d81d27e2358c50eb47300b3f175d"
+          }
+        },
+        {
+          "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuZ0l4uYM4_dzxp87VrAGBGEtjKNJs_eY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073239832895:android:b1072aeecef17902c17b8a",
+        "android_client_info": {
+          "package_name": "enterwind.ra.e_sim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073239832895-ctkrsepq5i57s99o7g78tqglhd2btvs2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "enterwind.ra.e_sim",
+            "certificate_hash": "7241ebca5b81d81d27e2358c50eb47300b3f175d"
+          }
+        },
+        {
+          "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuZ0l4uYM4_dzxp87VrAGBGEtjKNJs_eY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073239832895:android:5b30a2025f312449c17b8a",
+        "android_client_info": {
+          "package_name": "ra.enterwind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073239832895-vm4k179m14bto86ajdsdiae37b4mmrdm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ra.enterwind",
+            "certificate_hash": "7241ebca5b81d81d27e2358c50eb47300b3f175d"
+          }
+        },
+        {
+          "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuZ0l4uYM4_dzxp87VrAGBGEtjKNJs_eY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073239832895:android:67d6ec4980b41c84c17b8a",
+        "android_client_info": {
+          "package_name": "ra.enterwind.lapaskumala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073239832895-64lbb2vfvktpvhqoi6q2outqv84nbicu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ra.enterwind.lapaskumala",
+            "certificate_hash": "7241ebca5b81d81d27e2358c50eb47300b3f175d"
+          }
+        },
+        {
+          "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuZ0l4uYM4_dzxp87VrAGBGEtjKNJs_eY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073239832895-i5ajtkvrh7inc74vbno5ml6d3fkqqmbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

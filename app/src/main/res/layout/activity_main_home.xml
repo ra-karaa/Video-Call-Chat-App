@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dashboard"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#FF4CAF50"
+                    android:textSize="27dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_black" />
+
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btnChat"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_chat_black_24dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="15dp"
+                android:fontFamily="@font/roboto_black" />
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp">
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:fillColor="#ECECEC"
+                app:pageColor="#00000000"
+                app:radius="2dp"
+                app:indicatorGravity="bottom|right"
+                app:indicatorMarginHorizontal="5dp"
+                app:indicatorMarginVertical="5dp"
+                app:indicatorOrientation="horizontal"
+                app:slideInterval="3000"
+                app:strokeColor="#cacaca"
+                app:strokeWidth="1dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:background="@drawable/bg_splash_gradient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Layanan Kami"
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/roboto_black"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp"/>
+
+                        <View
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginBottom="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="8.7">
+
+                            <LinearLayout
+                                android:id="@+id/cardBerita"
+                                android:padding="5dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:src="@mipmap/news"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Berita"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/roboto_black"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/cardThumbnail"
+                                android:padding="5dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:src="@mipmap/cloud"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Galeri"
+                                    android:textColor="@color/colorPrimary"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/roboto_black"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/cardBesuk"
+                                android:padding="5dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:src="@mipmap/form"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Besuk"
+                                    android:textColor="@color/colorPrimary"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/roboto_black"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

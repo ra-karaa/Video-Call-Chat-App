@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PeerNumDigitText">
+        <item name="android:layout_width">@dimen/peer_number_digit_width</item>
+        <item name="android:layout_height">@dimen/peer_number_digit_height</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/peer_number_digit_size</item>
+        <item name="android:textAlignment" tools:ignore="NewApi">gravity</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="PortraitAnimView">
+        <item name="android:layout_width">@dimen/default_peer_anim_outline</item>
+        <item name="android:layout_height">@dimen/default_peer_anim_outline</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:src">@drawable/bg_splash_gradient</item>
+    </style>
+
+</resources>
